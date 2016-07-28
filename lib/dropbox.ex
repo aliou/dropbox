@@ -6,6 +6,7 @@ defmodule Dropbox do
   @base_url "https://content.dropboxapi.com/2/"
 
   @doc """
+  Upload a file to Dropbox.
   <https://www.dropbox.com/developers/documentation/http/documentation#files-upload>
   """
   def upload(client, content, filepath, mode \\ :add) do
